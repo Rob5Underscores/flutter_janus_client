@@ -134,7 +134,7 @@ class JanusClient {
   _attemptRest(String url) async {
     String transaction = _uuid.v4().replaceAll('-', '');
     var rootUrl = url;
-    if (!url.endsWith("/janus")) rootUrl = url + '/janus';
+    //if (!url.endsWith("/janus")) rootUrl = url + '/janus';
     _currentJanusUri = rootUrl;
     debugPrint('should print ');
     debugPrint(rootUrl);
